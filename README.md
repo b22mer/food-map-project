@@ -12,3 +12,5 @@
 **3. 실행화면**
 
 ![cap3](https://user-images.githubusercontent.com/74225835/179548525-3c22cc25-60ed-4163-99e7-db26863b02e3.png)
+
+*2022.07.19 AWS Server is closed, so not running until server connection.
