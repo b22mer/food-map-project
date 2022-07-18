@@ -1,0 +1,368 @@
+@font-face {
+  font-family: "SBAggroB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SBAggroM";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+html,
+body {
+  font-family: "SBAggroB";
+  height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+#list-box-title {
+
+  font-size: 40px;
+}
+
+#test {
+  margin-top: 1px;
+  padding: 7px;
+  border: 4px solid skyblue;
+  border-radius: 15px;
+  
+}
+
+
+
+/* .scroolBar { 
+  width: 200px;
+  height: 200px;
+  overflow-y: scroll;
+} */
+
+/* 아래의 모든 코드는 영역::코드로 사용 */
+
+#test::-webkit-scrollbar {
+    width: 10px;  /* 스크롤바의 너비 */
+}
+
+#test::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #217af4; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+#test::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+}
+
+#list-category{
+  font-size: 15px;
+  color: yellowgreen;
+}
+/* nav {
+  /* background-color: #e69a06; */
+/* } */
+
+.nav-container {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .nav-title {
+  font-size: 3rem;
+  font-style: italic;
+  color: blue;
+
+} */
+
+.nav-contact {
+  font-size: 2.5rem;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  
+}
+
+
+/* .category-title {
+  font-size: 3rem;
+  font-style: italic;
+  color: skyblue;
+} */
+
+.category-searchbox{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.category-search{
+  width: 500px;
+  height: 32px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  background-color: lightgrey;
+}
+
+
+
+
+
+.fa-bars {
+  font-size: 50px;
+  color:  #217af4;
+}
+
+.fa-bars:hover{ 
+  color: blue
+}
+
+span {
+  font-size: 20px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.category-reserve{
+  display: flex;
+  
+}
+.fa-search{
+  font-size: 30px;
+  padding-right: 10px;  
+}
+
+
+
+.fa-angle-double-down {
+  font-size: 30px;
+  padding-left:10px ;
+  
+}
+
+
+
+.fa-angle-double-down:hover {
+  color: skyblue
+}
+
+.category-sort-func {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: blue;
+  font-family: 'Staatliches', cursive;
+  margin:10px;
+}
+
+.category-sort-func:hover{
+  text-shadow: 2px 2px 2px yellow;
+}
+
+
+
+/* 24프로 */
+
+.category-list {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+
+}
+
+
+
+.category-item {
+  width: 170px;
+  height: 5rem;
+  border: none;
+  background: none;
+  /* border: none; */
+
+  font-family: inherit;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.category-item:hover {
+cursor: pointer;
+
+}
+
+.inner {
+  padding: 0 1.5rem;
+}
+
+@media all and (min-width: 1024px) {
+  .inner {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+/* 카카오맵 CSS */
+
+body {
+  height: 100vh;
+}
+
+nav {
+  height: 59px;
+}
+
+main {
+  padding-top: 1.5rem;
+  height: calc(100% - 59px);
+  display: flex;
+  flex-direction: column;
+}
+
+#map {
+  flex-grow: 1;
+  width: 100%;
+  height:100%;
+}
+
+.infowindow {
+  height: 447px;
+  width: 350px;
+  
+  /* border-style: none; */
+ 
+}
+
+.infowindow-body{
+  width: 100%;
+  height: 100%;
+
+  font-family: 'Gowun Dodum', sans-serif;
+
+}
+.infowindow-distance {
+
+  color: blue;
+}
+
+.infowindow-img-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.infowindow-img {
+  /* width: 100%; */
+}
+
+.infowindow-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+ 
+
+  border-bottom-style: solid;
+  border-bottom-color: lightblue;
+  
+
+}
+
+.infowindow-address {
+  font-size: 1.3rem;
+  font-weight: bold;
+
+}
+
+.infowindow-btn {
+  font-size: 1.5rem;
+  color: blue;
+  background-color: skyblue;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.infowindow-btn:hover {
+  background-color: #217af4;
+  color: white;
+  text-shadow: 5px 5px 5px blue;
+}
+
+.infowindow-review{
+  font-size: 18px;
+
+}
+
+.infowindow-category{
+  font-size: 1.3rem;
+}
+
+.listbox{
+  font-family: 'Gowun Dodum', sans-serif;
+  margin-top: 9px;
+}
+
+
+
+
+#list-menu{
+  margin-top: 9px;
+}
+
+#list-menu button{
+  border: 3px solid skyblue; background-color: rgba(0,0,0,0); color: skyblue; padding: 5px;
+}
+
+#list-menu-btn {
+
+  font-size: 0.rem;
+  color: blue;
+  background-color: lightskyblue;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#list-menu-btn:hover{
+  background-color: #217af4;
+  color: white;
+  text-shadow: 5px 5px 5px blue;
+}
+
+#list-title{
+  font-size: 25px;
+  color: black;
+}
+
+#list-review{
+  font-size: 15px;
+  color: blue;
+}
+#list-category{
+  font-size: 20px;
+}
+
+#list-phone{
+  font-size: 15px;
+  color: green;
+}
+
+/* 기준선 */
